@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Xuefei's site</title>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="images/1f600.png">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-animation.min.css">
+
+    <!--contact-->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_XlwcSuLr6o8PJULZUZwZH");
+       })();
+    </script>
+
+</head>
+
+  <body id="page-top" >
+
+      <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand name" href="#page-top" >Xuefei Shi</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+            <li class="page-scroll" style="display:none"><a href="#header"></a></li>
+            <li class="page-scroll"><a href="#about" ><span class="glyphicon glyphicon-user"></span> About</a></li>
+            <li class="page-scroll"><a href="#works" ><span class="glyphicon glyphicon-folder-open"></span> Works</a></li>
+            <li class="page-scroll"><a href="#contact" ><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <header id="header">
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-12">
+                <a id='xuefei'>Xuefei
+                 <div class="tooltip">
+                   <div id='content'>
+
+                     <audio id="xue3fei1" src="audio/xuefei.mp3"></audio>
+                     雪 菲
+                     <span class="glyphicon glyphicon-volume-down"  onclick="document.getElementById('xue3fei1').play()" ></span>
+
+                     <p>
+                        xuě  fēi
+                      </p>
+
+                   </div>
+                 </div>
+               </a>
+                <p>I'm <span id='line'>nobody</span></p>
+
+                <p>who are you?</p>
+              </div>
+            </div>
+          </div>
+      </header>
+
+      <section id="about">
+        <div class="container-fluid">
+          <p>About me</p>
+          <div class="row">
+
+            <div class="col-md-5" style="margin-top:20px" id="intro">
+              <ul>
+                <li><i class="fa fa-user"></i> New graduate from Concordia University</li>
+                <li><span class="glyphicon glyphicon-education"></span> Master of Applied Computer Science</li>
+                <li> <i class="fa fa-bolt"></i> Quick Learner</li>
+                <li><img id="montreal" src='images/montreal.png'> Lives at Montreal</li>
+              </ul>
+            </div>
+
+            <div class="col-md-2">
+              <div class="profile-pic" style="background-image:url('images/mirabella.jpg')">
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <p id="skillset">skillset<p>
+
+              <div class="skills" id="intro" style="margin:auto; width:300px">
+                  <ul>
+                    <li><i class="fa fa-check-square-o"></i> HTML</li>
+                    <li><i class="fa fa-check-square-o"></i> CSS</li>
+                    <li><i class="fa fa-check-square-o"></i> Javascript</li>
+                    <li><i class="fa fa-check-square-o"></i> Java</li>
+                    <li><i class="fa fa-check-square-o"></i> Python</li>
+                    <li><i class="fa fa-check-square-o"></i> LaTeX</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-lg-12 interest" id="intro">
+              <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                  <hr class="hr-style1">
+                </div>
+                <div class="col-md-4">
+                </div>
+              </div>
+                <i class="fa fa-search"></i> <span>Interested job positions including but not limited to:</span>
+                <ul class="dashed">
+                  <li> web developing</li>
+                  <li> java programming</li>
+                  <li> python programming</li>
+                </ul>
+            </div>
+            <div class="col-lg-12">
+              <p style="font-size:30px">Want to know more about me?</p>
+
+              <i class="fa fa-hand-o-right faa-horizontal animated" style="font-size:20px;margin-right:5px;"></i><a role="button" id="more" data-toggle="modal" href="#" data-target="#RequestModal" data-backdrop="static">  <span>Request for Résumé</span>  </a><!--<i class="fa fa-hand-o-left faa-horizontal animated"  style="font-size:20px"></i>-->
+
+              <!-- Modal -->
+              <div class="modal fade" id="RequestModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" id="close" class="close" data-dismiss="modal" >&times;</button>
+                      <p class="modal-title" style="font-size:35px">Contact Me</p>
+                      <hr class="hr-style2">
+                    </div>
+                  <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <form id="requestForm" novalidate>
+                              <div class="control-group">
+                                <div class="controls">
+                                  <input type="text" id="name" placeholder="Your Name" required data-validation-required-message="* Please enter your name"/>
+                                  <span class="help-block" id="help"></span>
+                                </div>
+                              </div>
+
+                              <div class="control-group">
+                                <div class="controls">
+                                  <input type="email" id="email" placeholder="Email Address" required data-validation-required-message="* Please enter your email address"/>
+                                  <span class="help-block"></span>
+                                </div>
+                              </div>
+
+                              <div class="control-group">
+                                <div class="controls">
+                                  <textarea rows="5" id="message" type="text" placeholder="Message"  required data-validation-required-message="* Please leave a message"></textarea>
+                                  <span class="help-block"></span>
+                                </div>
+                              </div>
+
+                              <div class="control-group">
+                                  <input type="checkbox" id="resumeRequest" name="ckb" value="" />Request for resume
+                              </div>
+
+
+
+                        </div>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-send"></span>  Send</button>
+                            <button type="button" id="reset" class="btn btn-default btn-lg" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+
+                    </form>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="works">
+          <div class="container-fluid">
+            <p>Academic Projects</p>
+
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-6">
+                  <hr class="hr-style3" >
+                </div>
+                <div class="col-sm-3">
+                </div>
+
+                <div class="col-sm-6 works-item">
+                    <a href="#workModal1" class="work-link" data-toggle="modal">
+                        <div class="work-img" style="font-size:20px">
+                          Sentiment Analysis Grammar based on NLTK
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 works-item">
+                    <a href="#workModal1" class="work-link" data-toggle="modal">
+                        <div class="work-img" style="font-size:20px">
+                          Substitution Encryption and Hacking Programs
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 works-item">
+                    <a href="#workModal1" class="work-link" data-toggle="modal">
+                        <div class="work-img">
+                          Resolution Program to Logic Dots
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 works-item">
+                    <a href="#workModal1" class="work-link" data-toggle="modal">
+                        <div class="work-img">
+                          Spam Filter
+                        </div>
+                    </a>
+                </div>
+
+
+              </div>
+          </div>
+          </section>
+
+        <section id="contact">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <p>Contact me</p>
+              </div>
+              <div class="col-md-6 mail">
+                <!--
+                <a href="mailto:xuefei.shi519@gmail.com"><span class="glyphicon glyphicon-envelope"></span> xuefei.shi519@gmail.com</a>
+              --><a role="button" id="more" data-toggle="modal" href="#" data-target="#RequestModal" data-backdrop="static"><i class="fa fa-envelope fa-3x faa-shake animated-hover"></i></a>
+              </div>
+              <div class="col-md-6 social-icon">
+                <ul class="list-inline">
+                  <li>
+                    <a href="https://ca.linkedin.com/in/xuefei-shi-ba017b98" class="btn-social btn-outline"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                  </li>
+                </ul>
+                </div>
+            </div>
+          </div>
+          </section>
+
+          <footer class="text-center">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4">
+                  </div>
+                  <div class="col-md-4">
+                    <hr class="hr-style2">
+                  </div>
+                  <div class="col-md-4">
+                  </div>
+                  <div class="col-lg-12 rights">
+                      All rights reserved. Xuefei Shi &copy; 2016
+                  </div>
+                </div>
+            </div>
+          </footer>
+
+
+
+          <!-- jQuery -->
+          <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+          <!-- Bootstrap Core JavaScript -->
+          <script src="js/bootstrap.min.js"></script>
+          <!-- Plugin JavaScript -->
+          <script src="js/jquery.easing/jquery.easing.1.3.min.js"></script>
+          <!-- Contact Form JavaScript -->
+          <script src="js/jqBootstrapValidation.js"></script>
+          <script src="js/xuefei_site_contact.js"></script>
+          <!-- Custom Theme JavaScript -->
+          <script src="js/xuefei_site.js"></script>
+
+
+
+
+  </body>
+</html>

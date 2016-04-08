@@ -1,0 +1,43 @@
+{
+  "name": "font-awesome-animation",
+  "version": "0.0.8",
+  "author": "l-lin",
+  "main": [
+    "dist/font-awesome-animation.css",
+    "dist/font-awesome-animation.min.css"
+  ],
+  "ignore": [
+    ".bowerrc",
+    ".editorconfig",
+    ".git*",
+    ".jshintrc",
+    "Gruntfile.js",
+    "test",
+    "node_modules",
+    "src",
+    "vendor",
+    "data.json",
+    "demo",
+    ".travis.yml",
+    "favicon.png",
+    "index.html",
+    "README.md",
+    "server",
+    "styles",
+    "_config.yml",
+    "grunt"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "homepage": "https://github.com/l-lin/font-awesome-animation",
+  "_release": "0.0.8",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.8",
+    "commit": "fc68caf3b85286cc9cb30d5c880fc96fa80a8657"
+  },
+  "_source": "git://github.com/l-lin/font-awesome-animation.git",
+  "_target": "~0.0.8",
+  "_originalSource": "font-awesome-animation",
+  "_direct": true
+}
