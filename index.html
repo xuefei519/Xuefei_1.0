@@ -1,11 +1,15 @@
 <!doctype html>
 <html>
   <head>
-    <title>Xuefei's site</title>
+    <title>Xuefei's page</title>
+
     <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, minimum-scale=1,user-scalable=no">
+
     <link rel="icon" href="images/1f600.png">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!--fonts-->
@@ -15,6 +19,13 @@
     <link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-animation.min.css">
 
+    <!--
+    !--for access from mainland china--
+    <link href='https://fonts.useso.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.useso.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.useso.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    -->
+
     <!--contact-->
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -22,6 +33,7 @@
           emailjs.init("user_XlwcSuLr6o8PJULZUZwZH");
        })();
     </script>
+    
     <!-- Hotjar Tracking Code for xuefei519.github.io -->
 <script>
     (function(h,o,t,j,a,r){
@@ -36,13 +48,14 @@
 
 </head>
 
-  <body id="page-top" >
+  <body id="page-top">
 
       <nav class="navbar navbar-custom navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -54,7 +67,8 @@
             <ul class="nav navbar-nav navbar-right">
             <li class="page-scroll" style="display:none"><a href="#header"></a></li>
             <li class="page-scroll"><a href="#about" ><span class="glyphicon glyphicon-user"></span> About</a></li>
-            <li class="page-scroll"><a href="#works" ><span class="glyphicon glyphicon-folder-open"></span> Works</a></li>
+            <li class="page-scroll"><a href="#portfolio" ><span class="glyphicon glyphicon-briefcase"></span> Portfolio</a></li>
+            <li class="page-scroll"><a href="#works" ><span class="glyphicon glyphicon-folder-open"></span> Project</a></li>
             <li class="page-scroll"><a href="#contact" ><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
           </ul>
         </div>
@@ -63,8 +77,8 @@
       <header id="header">
         <div class="container-fluid">
           <div class="row">
-              <div class="col-lg-12">
-                <a id='xuefei'>Xuefei
+              <div class="col-lg-12 col-sm-12 col-xs-12">
+                <a id='xuefei' onclick="$('#xuefei').toggleClass('hover')">Xuefei
                  <div class="tooltip">
                    <div id='content'>
 
@@ -79,9 +93,9 @@
                    </div>
                  </div>
                </a>
-                <p>I'm <span id='line'>nobody</span></p>
+                <p>I'm <span id='line' >nobody</span></p>
 
-                <p>who are you?</p>
+                <p>Who are you?</p>
               </div>
             </div>
           </div>
@@ -92,24 +106,30 @@
           <p>About me</p>
           <div class="row">
 
-            <div class="col-md-5" style="margin-top:20px" id="intro">
+            <!--
+            <div class="col-md-5 col-xs-12" style="margin-top:20px" id="intro">
               <ul>
                 <li><i class="fa fa-user"></i> New graduate from Concordia University</li>
                 <li><span class="glyphicon glyphicon-education"></span> Master of Applied Computer Science</li>
                 <li> <i class="fa fa-bolt"></i> Quick Learner</li>
-                <li><img id="montreal" src='images/montreal.png'> Lives at Montreal</li>
+                <li><img id="montreal" src='images/montreal.png'> Lives in Montreal</li>
               </ul>
             </div>
 
-            <div class="col-md-2">
-              <div class="profile-pic" style="background-image:url('images/mirabella.jpg')">
+
+            <div class="col-md-2 col-xs-12">
+              <div class="profile-pic" style="background-image:url('images/xuefei.jpg')">
               </div>
             </div>
 
-            <div class="col-md-5">
+
+
+
+            <div class="col-md-5 col-xs-12">
               <p id="skillset">skillset<p>
 
-              <div class="skills" id="intro" style="margin:auto; width:300px">
+              <div class="skills" id="intro">
+                <div class="col-lg-6 col-lg-offset-3 col-xs-6 col-xs-offset-3">
                   <ul>
                     <li><i class="fa fa-check-square-o"></i> HTML</li>
                     <li><i class="fa fa-check-square-o"></i> CSS</li>
@@ -119,28 +139,72 @@
                     <li><i class="fa fa-check-square-o"></i> LaTeX</li>
                   </ul>
                 </div>
-            </div>
-            <div class="col-lg-12 interest" id="intro">
-              <div class="row">
-                <div class="col-md-4">
                 </div>
-                <div class="col-md-4">
+
+                -->
+
+            <div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+              <div class="col-lg-8 col-xs-12" id="intro">
+                <p id="profile"align="justify">
+                  I’m a new graduate student of Computer Science with a master degree looking for a job.
+                  Equipped with academic training, I have developed solid knowledge ranges from the rationale of operating
+                  system to the natural language processing and AI. I’m currently seeking for an opportunity to apply my experience and skills to
+                  practices.
+               </p>
+              </div>
+
+              <div class="col-lg-4 col-xs-12" id="intro">
+                <div class="profile-pic" style="background-image:url('images/xuefei.jpg')">
+                </div>
+            </div>
+
+            <div class="col-lg-12 interest" id="intro">
+
+              <p id="skillset">skillset<p>
+
+              <div class="skills" id="intro">
+                  <ul>
+                    <li><i class="fa fa-check-square-o"></i> HTML</li>
+                    <li><i class="fa fa-check-square-o"></i> CSS</li>
+                    <li><i class="fa fa-check-square-o"></i> Javascript</li>
+                    <li><i class="fa fa-check-square-o"></i> Bootstrap</li>
+                    <li><i class="fa fa-check-square-o"></i> JQuery</li>
+                    <li><i class="fa fa-check-square-o"></i> AngularJs</li>
+                    <li><i class="fa fa-check-square-o"></i> Java</li>
+                    <li><i class="fa fa-check-square-o"></i> Python</li>
+                    <li><i class="fa fa-check-square-o"></i> LaTeX</li>
+                  </ul>
+              </div>
+              </div>
+              </div>
+
+
+
+
+              <div class="row">
+                <div class="col-md-4 col-xs-2">
+                </div>
+                <div class="col-md-4 col-xs-8">
                   <hr class="hr-style1">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-2">
                 </div>
               </div>
-                <i class="fa fa-search"></i> <span>Interested job positions including but not limited to:</span>
+
+            <div class="col-lg-10 col-lg-offset-1 col-xs-12 position">
+                <i class="fa fa-search"></i> <span id="position">Interested job positions including but not limited to:</span>
                 <ul class="dashed">
                   <li> web developing</li>
+                  <li> quality assurance</li>
                   <li> java programming</li>
                   <li> python programming</li>
                 </ul>
             </div>
-            <div class="col-lg-12">
-              <p style="font-size:30px">Want to know more about me?</p>
+            </div>
+            <div class="col-lg-12 getMore">
+              <p >Want to know more about me?</p>
 
-              <i class="fa fa-hand-o-right faa-horizontal animated" style="font-size:20px;margin-right:5px;"></i><a role="button" id="more" data-toggle="modal" href="#" data-target="#RequestModal" data-backdrop="static">  <span>Request for Résumé</span>  </a><!--<i class="fa fa-hand-o-left faa-horizontal animated"  style="font-size:20px"></i>-->
+              <i class="fa fa-hand-o-right faa-horizontal animated" style="margin-right:5px;"></i><a role="button" id="more" data-toggle="modal" href="#" data-target="#RequestModal" data-backdrop="static">  <span>Request for Résumé</span></a><!--<i class="fa fa-hand-o-left faa-horizontal animated"  style="font-size:20px"></i>-->
 
               <!-- Modal -->
               <div class="modal fade" id="RequestModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
@@ -154,7 +218,7 @@
                     </div>
                   <div class="modal-body">
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
+                        <div class="col-lg-8 col-xs-8 col-lg-offset-2 col-xs-offset-1">
                             <form id="requestForm" novalidate>
                               <div class="control-group">
                                 <div class="controls">
@@ -177,8 +241,8 @@
                                 </div>
                               </div>
 
-                              <div class="control-group">
-                                  <input type="checkbox" id="resumeRequest" name="ckb" value="" />Request for resume
+                              <div class="control-group" id="request_label">
+                                  <input type="checkbox" id="resumeRequest" name="ckb" value="" />Request for résumé
                               </div>
 
 
@@ -202,72 +266,195 @@
 
                 </div>
               </div>
+
+
+        </section>
+
+        <div class="motto">
+          <div class="backimg blur">
+          </div>
+            <p>We never stop growing until we stop learning.</p>
+        </div>
+
+        <section id="portfolio">
+          <div class="container-fluid">
+            <p>Portfolio</p>
+
+            <div class="row breaking-line">
+              <div class="col-lg-8 col-lg-offset-2 ">
+                <hr class="hr-style4" >
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 col-lg-offset-3 col-xs-10 col-xs-offset-1 portfolio-item" style="padding:0;">
+                  <a href="#" data-target="#workModal0" class="work-link" data-toggle="modal" data-backdrop="static" style="display:block;margin:auto;padding:auto">
+
+                        <img class="demo-pic" src="images/page4mirabelle.png">
+                        <div class="caption">
+                            <i class="fa fa-search-plus fa-4x"></i>
+                        </div>
+                    </a>
+                </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 col-xs-10 col-xs-offset-1 portfolio-item" style="padding:0;">
+              <a href="#" data-target="#workModal0" class="work-link" data-toggle="modal" data-backdrop="static" style="display:block;margin:auto;padding:auto">
+              <p class="work-name"> Webpage for Mirabelle the cat</p>
+            </a>
             </div>
           </div>
+
+        </div>
         </section>
 
         <section id="works">
+
           <div class="container-fluid">
-            <p>Academic Projects</p>
+            <p class="sectionName">Academic Projects</p>
+
 
             <div class="row">
-                <div class="col-sm-3">
-                </div>
-                <div class="col-sm-6">
-                  <hr class="hr-style3" >
-                </div>
-                <div class="col-sm-3">
-                </div>
-
-                <div class="col-sm-6 works-item">
-                    <a href="#workModal1" class="work-link" data-toggle="modal">
-                        <div class="work-img" style="font-size:20px">
-                          Sentiment Analysis Grammar based on NLTK
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-sm-6 works-item">
-                    <a href="#workModal1" class="work-link" data-toggle="modal">
-                        <div class="work-img" style="font-size:20px">
-                          Substitution Encryption and Hacking Programs
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-sm-6 works-item">
-                    <a href="#workModal1" class="work-link" data-toggle="modal">
-                        <div class="work-img">
-                          Resolution Program to Logic Dots
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-sm-6 works-item">
-                    <a href="#workModal1" class="work-link" data-toggle="modal">
-                        <div class="work-img">
-                          Spam Filter
-                        </div>
-                    </a>
-                </div>
-
-
+              <div class="col-lg-8 col-lg-offset-2 ">
+                <hr class="hr-style3" >
               </div>
+            </div>
+
+              <div class="col-md-4 col-md-offset-2 col-xs-12 hover panel" onmouseover="javascript:this.className += ' flip';" onmouseout="javascript:this.className = 'col-md-4 col-md-offset-2 col-xs-12 hover panel';">
+                <div class="front">
+                    <p class="work-title">Sentiment Analysis Grammar</p>
+                    <p class="course"><span style="font-family: 'lobster', sans-serif;">Course: </span>NATRUAL LANGUAGE ANALYSIS</p>
+                    <p style="font-weight:bold">Individual Project</p>
+                </div>
+                 <div class="back">
+                     <div class="projectContent">
+                         <p class="description">
+                      Developed a general feature based CFG (Context-Free Grammar) for English using NLTK, the feature grammar
+                      was based on Earley's Chart parser. Then built a basic sentiment analysis module based on this grammar and other open
+                      source components and enhanced it with ideas from the course.
+                        </p>
+                        <p class="technologies"><span style="font-family: 'lobster', sans-serif;">Technologies:</span> Python, AFINN</p>
+                     </div>
+                 </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12 hover panel" onmouseover="javascript:this.className += ' flip';" onmouseout="javascript:this.className = 'col-md-4 col-xs-12 hover panel';">
+                  <div class="front">
+                      <p class="work-title">Substitution Encryption and Hacking</p>
+                      <p class="course"><span style="font-family: 'lobster', sans-serif;">Course: </span>FOUNDATIONS OF CRYPTOGRAPHY</p>
+                      <p style="font-weight:bold">Group Project <span class="group">group of 4, role: programmer(1/1)</span></p>
+                  </div>
+                  <div class="back">
+                      <div class="projectContent">
+
+                          <div class="demo version-section dark" ><a href="https://github.com/xuefei519/Cryptography" target="_blank" class="github-corner">
+                              <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#14435D; color:#E3E3D8; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);">
+                                  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                                  <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                                  <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+                              </svg></a>
+                          </div>
+
+
+                          <p class="description">Developed two programs with user-friendly interfaces, one for substitution encryption
+                              and one for breaking it using two-gram frequency of letters. The encryption program encrypts the plain text
+                              with any non-duplicate key, and the other program automatically breaks the ciphertext produced by the encryption program.</p>
+                          <p class="technologies"><span style="font-family: 'lobster', sans-serif;">Technologies:</span> Mac OS, Eclipse, Java, Java Swing</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4 col-md-offset-2 col-xs-12 hover panel" onmouseover="javascript:this.className += ' flip';" onmouseout="javascript:this.className = 'col-md-4 col-md-offset-2 col-xs-12 hover panel';">
+                  <div class="front">
+                      <p class="work-title">Resolution Program to Logic Dots</p>
+                      <p class="course"><span style="font-family: 'lobster', sans-serif;">Course: </span>INTELLIGENT SYSTEMS</p>
+                      <p style="font-weight:bold">Group Project <span class="group">group of 2, role: programmer(1/2)</span></p>
+                  </div>
+                  <div class="back">
+                      <div class="projectContent">
+                          <p class="description">Developed a resolution program to the game logic dots which is a small game trying to find the right positions of the dots based on the number provided in the column and row. Search the name on the internet and you can see what it is. What we did in the project was writing a program to find the answer of the game. We used two ways to solve the problem respectively which are depth first algorithm and best first algorithm.</p>
+                          <p class="technologies"><span style="font-family: 'lobster', sans-serif;">Technologies: </span>prolog</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12 hover panel" onmouseover="javascript:this.className += ' flip';" onmouseout="javascript:this.className = 'col-md-4 col-xs-12 hover panel';">
+                  <div class="front">
+                      <p class="work-title">Spam Filter</p>
+                      <p class="course"><span style="font-family: 'lobster', sans-serif;">Course: </span>INTRO TO A.I.</p>
+                      <p style="font-weight:bold">Individual Project</p>
+                  </div>
+                  <div class="back">
+                      <div class="projectContent">
+                          <p class="description">Implemented a Naïve Bayes text classifier to use as a spam filter, which involves a training section to add words to the vocabulary with their
+                              frequency and calculate their probabilities of both spam and ham. Then comes the classify part, in which calculates both the probabilities of being a ham and
+                              a spam for a given email, then adopt the greater one to specify which group this email belongs to.</p>
+                          <p class="technologies"><span style="font-family: 'lobster', sans-serif;">Technologies:</span> Windows /Mac OS, Eclipse , Java, Naive Bayes</p>
+
+                      </div>
+                  </div>
+              </div>
+
           </div>
-          </section>
+        </section>
 
         <section id="contact">
           <div class="container-fluid">
             <div class="row">
+
               <div class="col-lg-12">
                 <p>Contact me</p>
               </div>
-              <div class="col-md-6 mail">
-                <!--
-                <a href="mailto:xuefei.shi519@gmail.com"><span class="glyphicon glyphicon-envelope"></span> xuefei.shi519@gmail.com</a>
-              --><a role="button" id="more" data-toggle="modal" href="#" data-target="#RequestModal" data-backdrop="static"><i class="fa fa-envelope fa-3x faa-shake animated-hover"></i></a>
+              <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+
+                <form id="msg" novalidate>
+                  <div class="control-group">
+                    <div class="controls" >
+
+                      <input type="text" id="contact_name" name="name" placeholder="Your Name" required data-validation-required-message="* Please enter your name"/>
+                      <label for="contact_name">Name</label>
+                      <span class="help-block" id="msg_help"></span>
+                    </div>
+                  </div>
+
+                  <div class="control-group">
+                    <div class="controls" >
+
+                      <input type="email" id="contact_email" placeholder="Email Address" required data-validation-required-message="* Please enter your email address"/>
+                      <label>Email</label>
+                      <span class="help-block"></span>
+                    </div>
+                  </div>
+
+                  <div class="control-group">
+                    <div class="controls" >
+
+                      <textarea rows="5" id="contact_message" type="text" value="" placeholder="Message"  required data-validation-required-message="* Please leave a message"></textarea>
+                      <label>Message</label>
+                      <span class="help-block"></span>
+                    </div>
+                  </div>
+
+                  <div class="control-group" id="msg_request_label">
+                      <input type="checkbox" id="msg_resumeRequest" name="ckb" />Request for résumé
+                  </div>
+
+                  <div class="msg_footer">
+                    <div id="msg_success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-send"></span>  Send</button>
+                          </div>
+                        </div>
+                </div>
+
+                  </form>
+
+
+
               </div>
-              <div class="col-md-6 social-icon">
+
+              <div class="col-md-6  col-md-offset-3 col-xs-8 col-xs-offset-2 social-icon">
                 <ul class="list-inline">
                   <li>
                     <a href="https://ca.linkedin.com/in/xuefei-shi-ba017b98" class="btn-social btn-outline"><i class="fa fa-linkedin-square fa-3x"></i></a>
@@ -278,17 +465,17 @@
           </div>
           </section>
 
-          <footer class="text-center">
+          <footer class="text-center" id='footer'>
             <div class="container-fluid">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-2">
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-8">
                     <hr class="hr-style2">
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-2">
                   </div>
-                  <div class="col-lg-12 rights">
+                  <div class="col-lg-12 col-xs-12 rights">
                       All rights reserved. Xuefei Shi &copy; 2016
                   </div>
                 </div>
@@ -296,18 +483,313 @@
           </footer>
 
 
+          <div class="modal fade" id="workModal0" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog work-modal">
+              <div class="modal-content">
+                <div class="modal-header">
+
+                  <div class="demo version-section dark" ><a href="https://github.com/xuefei519/mirabelle.git" class="github-corner">
+                      <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#14435D; color:#E3E3D8; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);">
+                        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+                      </svg></a>
+                  </div>
+
+                  <button type="button" id="close" class="close" data-dismiss="modal" >&times;</button>
+                  <p class="modal-title">Webpage for Mirabelle the cat</p>
+                  <hr class="hr-style2">
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6 col-lg-offset-3 col-xs-10 col-xs-offset-1" style="padding:0;">
+                      <a  href="https://xuefei519.github.io/mirabelle" target="_blank" style="display:block;margin:auto;padding:auto">
+                        <img class="demo-pic" src="images/page4mirabelle.png">
+                        <div class="link">
+                            <i class="fa fa-link fa-4x" aria-hidden="true"></i>
+                        </div>
+                      </a>
+                    </div>
+                    </div>
+
+                  <p style="font-weight:bold">Work with <a href="http://tsing-gu.com" target="_blank"> Tsing Gu</a> <span class="group">role: programmer/designer</span></p>
+                  <p class="description">
+                    This a simple one-page responsive web inspired by the <a href="http://www.piedpiper.com/#home"  target="_blank"><em>pied piper</em></a> website of the TV series <em>Silicon Valley</em>, it intends to introduce Mirabelle the cat.
+                  It was built from scratch and not using any template. The comment section uses <a href="https://disqus.com/"  target="_blank"><em>Disqus</em></a> which is a blog comment hosting service for websites and online communities that uses a networked platform. The layout of this page changes
+                  consistently on screens of different sizes and resolutions, just like this one, and it is still under testing and optimization.
+                  </p>
+                  <p class="technologies"><span style="font-family: 'lobster', sans-serif;">Technologies:</span> HTML5, CSS, Javascript, JQuery, Bootstrap</p>
+                </div>
+              </div>
+          </div>
+          </div>
+
+
+
+
+        <div id="rate">
+          <div>
+            <span id='close_rate' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+          </div>
+          <a id="survey" type="button"   href="#" data-target="#rateModal" class="work-link" data-toggle="modal" data-backdrop="static">
+            <p id='opinion'>
+              Your opinion matters!
+            </p>
+            <p id='rate_me'>
+              Rate me!
+              </p>
+          </a>
+        </div>
+
+        <div class="modal fade" id="rateModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" id="rateModal_close" class="close" data-dismiss="modal" >&times;</button>
+                <p class="modal-title">How do you like this page?</p>
+                <hr class="hr-style1">
+              </div>
+
+
+              <div class="modal-body" >
+
+                <form id="Rateform">
+
+                  <div class="control-group">
+                    <label class="control-label">1. From where did you hear of this page?</label>
+                      <div class="controls">
+                        <label class="checkbox">
+                          <input
+                          type="checkbox"
+                          name="question1"
+                          value="résumé"
+                          data-validation-minchecked-minchecked="1"
+                          data-validation-minchecked-message="* Please make a choice"
+                          />
+                         From my résumé
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" name="question1" value="social media" /> From social media
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" name="question1" value="friends"/> From friends
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" name="question1" value="search engine"/> From search engine
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" name="question1" value="other"/> Other
+                        </label>
+
+                        <p class="help-block"></p>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label">2. Which of the following best describes you?</label>
+                        <div class="controls">
+                          <label class="checkbox">
+                            <input
+                            type="checkbox"
+                            name="question2"
+                            value="recruiter"
+                            data-validation-minchecked-minchecked="1"
+                            data-validation-minchecked-message="* Please make a choice"
+                            />
+                           Recruiter
+                          </label>
+                          <label class="checkbox">
+                            <input type="checkbox" name="question2" value="friend"/>a Friend
+                          </label>
+                          <label class="checkbox">
+                            <input type="checkbox" name="question2" value="nobody"/>Nobody
+                          </label>
+                          <label class="checkbox">
+                            <input type="checkbox" name="question2" value="other"/> Other
+                          </label>
+
+                          <p class="help-block"></p>
+                        </div>
+                      </div>
+
+                      <span style="font-weight:bold">3. Please rate the following:</span>
+                  <br>
+                  <span style="font-weight: normal;font-size:15px">(5 stands for the highest rating while 0 stands for the lowest)</span>
+                      <div class="control-group">
+                        <label class="control-label sublabel">1) design:</label>
+                          <div class="controls">
+                            <label class="radio">
+                              <input
+                              type="radio"
+                              name="question3-1"
+                              value="5"
+                              data-validation-minchecked-minchecked="1"
+                              data-validation-minchecked-message="* Please make a choice"
+                              />
+                             5
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="question3-1" value="4"/>4
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="question3-1" value="3"/>3
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="question3-1" value="2"/>2
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="question3-1" value="1"/>1
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="question3-1" value="0"/>0
+                            </label>
+
+                            <p class="help-block"></p>
+                          </div>
+                        </div>
+
+                        <div class="control-group">
+                          <label class="control-label sublabel">2) content:</label>
+                            <div class="controls">
+                              <label class="radio">
+                                <input
+                                type="radio"
+                                name="question3-2"
+                                value="5"
+                                data-validation-minchecked-minchecked="1"
+                                data-validation-minchecked-message="* Please make a choice"
+                                />
+                               5
+                              </label>
+                              <label class="radio">
+                                <input type="radio" name="question3-2" value="4"/>4
+                              </label>
+                              <label class="radio">
+                                <input type="radio" name="question3-2" value="3"/>3
+                              </label>
+                              <label class="radio">
+                                <input type="radio" name="question3-2" value="2"/>2
+                              </label>
+                              <label class="radio">
+                                <input type="radio" name="question3-2" value="1"/>1
+                              </label>
+                              <label class="radio">
+                                <input type="radio" name="question3-2" value="0"/>0
+                              </label>
+
+                              <p class="help-block"></p>
+                            </div>
+                          </div>
+
+                          <div class="control-group">
+                            <label class="control-label sublabel">3) compability:</label>
+                              <div class="controls">
+                                <label class="radio">
+                                  <input
+                                  type="radio"
+                                  name="question3-3"
+                                  value="5"
+                                  data-validation-minchecked-minchecked="1"
+                                  data-validation-minchecked-message="* Please make a choice"
+                                  />
+                                 5
+                                </label>
+                                <label class="radio">
+                                  <input type="radio" name="question3-3" value="4"/>4
+                                </label>
+                                <label class="radio">
+                                  <input type="radio" name="question3-3" value="3"/>3
+                                </label>
+                                <label class="radio">
+                                  <input type="radio" name="question3-3" value="2"/>2
+                                </label>
+                                <label class="radio">
+                                  <input type="radio" name="question3-3" value="1"/>1
+                                </label>
+                                <label class="radio">
+                                  <input type="radio" name="question3-3" value="0"/>0
+                                </label>
+
+                                <p class="help-block"></p>
+                              </div>
+                            </div>
+
+
+                            <div class="control-group">
+                              <label class="control-label sublabel">4) overall:</label>
+                                <div class="controls">
+                                  <label class="radio" >
+                                    <input
+                                    type="radio"
+                                    name="question3-4"
+                                    value="5"
+                                    data-validation-minchecked-minchecked="1"
+                                    data-validation-minchecked-message="* Please make a choice"
+                                    />5
+                                  </label>
+                                  <label class="radio">
+                                    <input type="radio" name="question3-4" value="4"/>4
+                                  </label>
+                                  <label class="radio">
+                                    <input type="radio" name="question3-4" value="3"/>3
+                                  </label>
+                                  <label class="radio">
+                                    <input type="radio" name="question3-4" value="2"/>2
+                                  </label>
+                                  <label class="radio">
+                                    <input type="radio" name="question3-4" value="1"/>1
+                                  </label>
+                                  <label class="radio">
+                                    <input type="radio" name="question3-4" value="0"/>0
+                                  </label>
+
+                                  <p class="help-block"></p>
+                                </div>
+                              </div>
+
+
+                              <div class="control-group">
+                                <label class="control-label">Comments: (optional)</label>
+                                  <div class="controls">
+                                    <textarea rows="5"  type="text" id="comment"></textarea>
+                                  </div>
+                                </div>
+
+                  </div>
+
+                    <div class="modal-footer">
+                      <div id="rate_success"></div>
+                      <div class="row">
+                          <div class="form-group col-xs-12">
+                              <button type="submit" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-send"></span>  Send</button>
+                              <button type="button" id="cancel" class="btn btn-default btn-lg" data-dismiss="modal">Cancel</button>
+
+                            </div>
+                          </div>
+                  </div>
+
+                    </form>
+
+            </div>
+          </div>
+        </div>
+
+
 
           <!-- jQuery -->
-          <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+          <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
           <!-- Bootstrap Core JavaScript -->
           <script src="js/bootstrap.min.js"></script>
           <!-- Plugin JavaScript -->
           <script src="js/jquery.easing/jquery.easing.1.3.min.js"></script>
           <!-- Contact Form JavaScript -->
           <script src="js/jqBootstrapValidation.js"></script>
-          <script src="js/xuefei_site_contact.js"></script>
+          <script src="js/xuefei_page_contact.js"></script>
+          <script src="js/xuefei_page_rate.js"></script>
           <!-- Custom Theme JavaScript -->
-          <script src="js/xuefei_site.js"></script>
+          <script src="js/xuefei_page.js"></script>
+
+
 
 
   </body>
